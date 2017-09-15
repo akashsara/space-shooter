@@ -722,6 +722,8 @@ MonoBehaviour:
   - {fileID: 1258124971553632, guid: c047efe4d8dbf8f499d2c0413d82d331, type: 2}
   - {fileID: 1890278132063168, guid: c6d417d5602e59a4f95c9805ace442fc, type: 2}
   - {fileID: 1055281076194488, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
+  - {fileID: 1055281076194488, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
+  - {fileID: 1055281076194488, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
   spawnValues: {x: 6, y: 0, z: 8}
   scoreText: {fileID: 717282048}
   restartText: {fileID: 188510123}
