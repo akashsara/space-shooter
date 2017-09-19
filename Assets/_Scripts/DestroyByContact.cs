@@ -23,7 +23,7 @@ public class DestroyByContact : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other) {
-		if(other.CompareTag("Boundary") || other.CompareTag("Enemy")) {
+		if(other.CompareTag("Boundary") || other.CompareTag("Enemy") || other.CompareTag("Asteroid")){
 			return;
 		}
 
@@ -32,7 +32,6 @@ public class DestroyByContact : MonoBehaviour {
 		}
 
 		if(other.name == "Bolt(Clone)" && this.name == "Enemy Bolt(Clone)") {
-			Debug.Log("Boom");
 			Instantiate(miniExplosion, transform.position, transform.rotation);
 		}
 
