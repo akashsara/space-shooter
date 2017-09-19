@@ -5,6 +5,7 @@ using UnityEngine;
 public class DestroyByContact : MonoBehaviour {
 
 	public GameObject explosion;
+	public GameObject miniExplosion;
 	public GameObject playerExplosion;
 	public int ScoreValue;
 	private GameController gameController;
@@ -28,6 +29,11 @@ public class DestroyByContact : MonoBehaviour {
 
 		if(explosion != null) {
 			Instantiate(explosion, transform.position, transform.rotation);
+		}
+
+		if(other.name == "Bolt(Clone)" && this.name == "Enemy Bolt(Clone)") {
+			Debug.Log("Boom");
+			Instantiate(miniExplosion, transform.position, transform.rotation);
 		}
 
 		if(other.CompareTag("Player")) {

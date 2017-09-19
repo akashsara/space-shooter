@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour {
 			if(chosen >= minMaxValues[i] && chosen < minMaxValues[i + 1])
 				return i;
 		}
-		Debug.Log("Out of loop!");
+		Debug.Log("Could not chooseSpawn!");
 		return 0;
 	}
 
@@ -61,7 +61,6 @@ public class GameController : MonoBehaviour {
 		}
 		if(score > levelUpArray[level] && level != 6) {
 			level++;
-			Debug.Log("LEVEL UP!");
 		}
 	}
 
