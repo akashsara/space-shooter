@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour {
 	public GUIText scoreText;
 	public GUIText restartText;
 	public GUIText gameOverText;
-	public int hazardCount;
+	private int hazardCount;
 	public float spawnWait;
 	public float startWait;
 	public float waveWait;
@@ -47,6 +47,7 @@ public class GameController : MonoBehaviour {
 	void Start() {
 		score = 0;
 		level = 0;
+		hazardCount = 10;
 		gameOver = false;
 		restart = false;
 		restartText.text = "";
@@ -62,6 +63,7 @@ public class GameController : MonoBehaviour {
 		if(score > levelUpArray[level] && level != 6) {
 			level++;
 		}
+		hazardCount = 10 + Mathf.FloorToInt(score/250);
 	}
 
 	void FixedUpdate() {

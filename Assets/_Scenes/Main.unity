@@ -718,12 +718,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hazard:
-  - {fileID: 1220885397798168, guid: d1f17ab48fda33b488e814f1ff457f25, type: 2}
-  - {fileID: 1891328320017386, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
-  - {fileID: 1220885397798168, guid: d1f17ab48fda33b488e814f1ff457f25, type: 2}
+  - {fileID: 1372293237482044, guid: 70658f5fd1b464a4a9a899ab1b2bb1a9, type: 2}
+  - {fileID: 1258124971553632, guid: c047efe4d8dbf8f499d2c0413d82d331, type: 2}
+  - {fileID: 1890278132063168, guid: c6d417d5602e59a4f95c9805ace442fc, type: 2}
   - {fileID: 1891328320017386, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
   - {fileID: 1965798438072014, guid: 5ddce4fecdedb3048b15db72a1a2d888, type: 2}
-  - {fileID: 1891328320017386, guid: ee78c4379c0f8d54c96a969008c8cd1f, type: 2}
+  - {fileID: 1220885397798168, guid: d1f17ab48fda33b488e814f1ff457f25, type: 2}
   spawnValues: {x: 6, y: 0, z: 8}
   scoreText: {fileID: 717282048}
   restartText: {fileID: 188510123}
