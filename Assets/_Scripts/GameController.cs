@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour {
 		}
 		hazardCount = 10 + Mathf.FloorToInt(score/250);
 		if(difficultyLevel < 15) {
-			difficultyLevel = Mathf.Max(difficultyLevel, Mathf.FloorToInt(score/50));//Random.Range(500, 1000)));
+			difficultyLevel = Mathf.Max(difficultyLevel, Mathf.FloorToInt(score/Random.Range(500, 1000)));
 		}
 	}
 
