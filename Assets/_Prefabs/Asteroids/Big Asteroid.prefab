@@ -156,7 +156,7 @@ MonoBehaviour:
   miniExplosion: {fileID: 100004, guid: 86166463aeb51d44680cd8b94f10d9df, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
   ScoreValue: 50
-  hp: 2
+  hp: 3
 --- !u!114 &114904400276309418
 MonoBehaviour:
   m_ObjectHideFlags: 1
