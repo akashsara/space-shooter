@@ -8,6 +8,7 @@ public class DestroyByContact : MonoBehaviour {
 	public GameObject miniExplosion;
 	public GameObject playerExplosion;
 	public int ScoreValue;
+	public int hp;
 	private GameController gameController;
 
 	void Start() {
@@ -27,6 +28,18 @@ public class DestroyByContact : MonoBehaviour {
 			return;
 		}
 
+		if(other.CompareTag("Player")) {
+				Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
+				gameController.GameOver();
+		}
+
+		if(hp > 1) {
+			Instantiate(miniExplosion, transform.position, transform.rotation);
+			hp--;
+			Destroy(other.gameObject);
+			return;
+		}
+
 		if(explosion != null) {
 			Instantiate(explosion, transform.position, transform.rotation);
 		}
@@ -35,13 +48,8 @@ public class DestroyByContact : MonoBehaviour {
 			Instantiate(miniExplosion, transform.position, transform.rotation);
 		}
 
-		if(other.CompareTag("Player")) {
-			Instantiate(playerExplosion, other.transform.position, other.transform.rotation);
-			gameController.GameOver();
-		}
-
 		gameController.AddScore(ScoreValue);
 		Destroy(other.gameObject);
-		Destroy(gameObject);
+		Destroy(gameObject);		
 	}
 }

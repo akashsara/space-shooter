@@ -168,6 +168,7 @@ MonoBehaviour:
   miniExplosion: {fileID: 0}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
   ScoreValue: 20
+  hp: 1
 --- !u!136 &136141135389379664
 CapsuleCollider:
   m_ObjectHideFlags: 1
